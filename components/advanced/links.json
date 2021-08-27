@@ -1,15 +1,15 @@
 {
-  "collectionName": "components_shared_internal_links",
+  "collectionName": "components_shared_links",
   "info": {
-    "name": "internal_link",
-    "icon": "external-link-square-alt",
+    "name": "links",
+    "icon": "ad",
     "description": ""
   },
   "options": {},
   "attributes": {
     "internal": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "shared.link"
     }
   }

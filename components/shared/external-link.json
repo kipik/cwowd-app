@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_external_links",
+  "info": {
+    "name": "external_link",
+    "icon": "external-link-alt"
+  },
+  "options": {},
+  "attributes": {
+    "external_link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    }
+  }
+}

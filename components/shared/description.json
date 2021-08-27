@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_descriptions",
+  "info": {
+    "name": "description",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "richtext"
+    },
+    "source": {
+      "type": "string"
+    }
+  }
+}

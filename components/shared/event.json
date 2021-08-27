@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_shared_events",
+  "info": {
+    "name": "event",
+    "icon": "calendar-alt"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "nature": {
+      "type": "enumeration",
+      "enum": [
+        "Financement",
+        "Reboot",
+        "Late_Pledge",
+        "Pledge_Manager",
+        "Precommande"
+      ]
+    },
+    "start_date_min": {
+      "type": "date"
+    },
+    "start_date_max": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "start_time": {
+      "type": "time"
+    },
+    "end_time": {
+      "type": "time"
+    },
+    "plateform": {
+      "type": "enumeration",
+      "enum": [
+        "Kickstarter",
+        "Ulule",
+        "Gamefund",
+        "GameOnTabletop"
+      ]
+    }
+  }
+}
