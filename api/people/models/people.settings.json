@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "people",
+  "info": {
+    "name": "people"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "game_author": {
+      "via": "author",
+      "collection": "game"
+    },
+    "game_illustrator": {
+      "via": "illustrator",
+      "collection": "game"
+    }
+  }
+}
