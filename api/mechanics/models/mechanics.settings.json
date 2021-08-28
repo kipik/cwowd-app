@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mechanics",
+  "info": {
+    "name": "mechanics"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "games": {
+      "collection": "game",
+      "via": "mechanics",
+      "dominant": true
+    }
+  }
+}
