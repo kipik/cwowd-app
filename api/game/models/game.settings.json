@@ -151,6 +151,10 @@
     "mechanics": {
       "via": "games",
       "collection": "mechanics"
+    },
+    "themes": {
+      "via": "games",
+      "collection": "theme"
     }
   }
 }
