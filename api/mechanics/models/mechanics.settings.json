@@ -17,8 +17,8 @@
       "unique": true
     },
     "games": {
-      "collection": "game",
       "via": "mechanics",
+      "collection": "game",
       "dominant": true
     }
   }
