@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "name": "post",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "excerpt": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "publish_date": {
+      "type": "datetime"
+    },
+    "feature_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "published": {
+      "type": "boolean"
+    },
+    "author": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "posts"
+    },
+    "original_date": {
+      "type": "datetime"
+    },
+    "wp_id": {
+      "type": "integer"
+    },
+    "tags": {
+      "via": "posts",
+      "collection": "tag"
+    },
+    "comment": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.internal-link"
+    }
+  }
+}

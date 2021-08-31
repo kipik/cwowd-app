@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "articles",
+  "collectionName": "tags",
   "info": {
-    "name": "article"
+    "name": "tag",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,14 +12,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "posts": {
+      "via": "tags",
+      "collection": "post",
+      "dominant": true
+    },
+    "name": {
       "type": "string",
       "required": true,
       "unique": true
     },
     "slug": {
       "type": "uid",
-      "targetField": "title"
+      "targetField": "name"
     }
   }
 }
