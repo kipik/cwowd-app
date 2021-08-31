@@ -18,8 +18,8 @@
       "required": false
     },
     "games": {
-      "collection": "game",
       "via": "categories",
+      "collection": "game",
       "dominant": true
     },
     "slug": {
