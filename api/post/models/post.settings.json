@@ -60,9 +60,9 @@
       "type": "boolean"
     },
     "author": {
+      "via": "posts",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "posts"
+      "model": "user"
     },
     "original_date": {
       "type": "datetime"
