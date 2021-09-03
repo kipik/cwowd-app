@@ -164,6 +164,14 @@
       },
       "type": "uid",
       "targetField": "title"
+    },
+    "description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
     }
   }
 }
