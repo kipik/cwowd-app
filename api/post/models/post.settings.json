@@ -18,13 +18,14 @@
       "unique": true
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "title"
     },
     "content": {
       "type": "richtext"
     },
-    "image": {
-      "model": "file",
+    "images": {
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images"
@@ -35,9 +36,6 @@
     },
     "excerpt": {
       "type": "string"
-    },
-    "body": {
-      "type": "richtext"
     },
     "publish_date": {
       "type": "datetime"
@@ -58,9 +56,9 @@
       "type": "boolean"
     },
     "author": {
+      "via": "posts",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "posts"
+      "model": "user"
     },
     "original_date": {
       "type": "datetime"
