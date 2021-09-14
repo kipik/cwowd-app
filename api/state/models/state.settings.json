@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "state": {
+    "name": {
       "type": "string",
       "required": true,
       "unique": true
@@ -24,8 +24,7 @@
       "collection": "game"
     },
     "slug": {
-      "type": "uid",
-      "targetField": "state"
+      "type": "uid"
     }
   }
 }
